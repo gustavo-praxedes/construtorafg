@@ -49,8 +49,8 @@
   body {
 	margin:0;
 	padding:0;
-	background-color:#ffffff;
-	color:#1a1a1a;
+	background-color:#E4DBCF;
+	color:#081525;
 	font-family:"Open Sans",system-ui;
     font-weight:400;
 	line-height:1.6;
@@ -211,18 +211,18 @@ a:hover {
 	color-scheme:dark;
 }
 :root.theme-dark :focus-visible {
-	outline: 2px solid #4899F7;
+	outline: 2px solid #C0943B;
 	outline-offset: 2px;
   }
 :root.theme-dark body {
-	background-color:#121212;
+	background-color:#081525;
 	color:#ffffff;
 }
 :root.theme-dark a:not(.button) {
-	color:#4899F7;
+	color:#1E3555;
 }
 :root.theme-dark a:not(.button):hover {
-	color:#7AB8FF;
+	color:#305B7E;
 }
 
 /* Auto theme */
@@ -231,18 +231,18 @@ a:hover {
 }
 @media (prefers-color-scheme:dark) {
 	:root.theme-auto body {
-	background-color:#121212;
+	background-color:#081525;
 	color:#ffffff;
 }
 :root.theme-auto :focus-visible {
-    outline: 2px solid #4899F7;
+    outline: 2px solid #C0943B;
     outline-offset: 2px;
   }
 :root.theme-auto a:not(.button) {
-	color:#4899F7;
+	color:#1E3555;
 }
 :root.theme-auto a:not(.button):hover {
-	color:#7AB8FF;
+	color:#305B7E;
 }
 }
 
@@ -324,3 +324,23 @@ ul li {
 	font-weight:800;
 	src:url('../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.woff2') format('woff2');
 }
+
+/* ===== Construtora FG — paleta da marca ===== */
+:root.theme-dark body,
+:root.theme-auto body { background-color:#E4DBCF; color:#081525; }
+@media (prefers-color-scheme: dark) {
+  :root.theme-auto body { background-color:#081525; color:#E4DBCF; }
+  :root.theme-auto a:not(.button) { color:#C9D6E3; }
+  :root.theme-auto a:not(.button):hover { color:#E4DBCF; }
+}
+:root.theme-dark body { background-color:#081525; color:#E4DBCF; }
+:root.theme-dark a:not(.button) { color:#C9D6E3; }
+:root.theme-dark a:not(.button):hover { color:#E4DBCF; }
+.button.button-whatsapp {
+  --button-text:#ffffff;
+  --button-background:#128C4A;
+}
+.button.button-whatsapp:hover {
+  --button-background:#0E7038;
+}
+h1 { letter-spacing:-0.02em; }
